@@ -80,6 +80,8 @@ fractal.components.set('default.preview','@preview');
 ```html
 <link type="text/css" rel="stylesheet" href="{{ path '/css/_partials/btn.css' }}"/>
 ```
+Note: Do not underscore btn.scss otherwise it won't get generated.
+The idea of this is to generate all the partials as individual css files just for the pattern library. For production we would bundle all those partials up into the global anyway.
 
 5. Create gulpfile.js
 ```
